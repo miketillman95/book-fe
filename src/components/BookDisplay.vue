@@ -21,7 +21,7 @@
 
 <script>
 import axios from 'axios'
-const api = 'http://104.248.120.4/api/books'
+const api = 'http://165.22.8.22/api/books'
 const apiHolder = 'https://jsonplaceholder.typicode.com/posts'
 export default {
     data(){
