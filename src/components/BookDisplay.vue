@@ -3,13 +3,12 @@
 </script>
 
 <template>
-    <h1>Welcome to my books</h1>
+    <h1>Welcome to the Book collection</h1>
     <div class="card-container">
         <div class="card text-dark bg-light mb-3"  v-for="book in books" :key="'book.id'" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
+            <div class="card-header">Book title:</div>
             <div class="card-body">
-                <!-- add title here -->
-                <h5 class="card-title">Light card title</h5>
+                <h5 class="card-title">Description:</h5>
                 <!-- add description here -->
                 <p class="card-text">
                     {{ book.title }}
