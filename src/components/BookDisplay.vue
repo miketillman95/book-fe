@@ -34,7 +34,7 @@ export default {
     },
     methods:{
         fetchData(){
-            axios.get(api)
+            axios.get(apiHolder)
                 .then(res => {
                     this.books = res.data.data
                 })
