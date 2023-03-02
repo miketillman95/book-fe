@@ -11,7 +11,7 @@
                 <h5 class="card-title">Description:</h5>
                 <!-- add description here -->
                 <p class="card-text">
-                    {{ book.description}}
+                    {{ book.body}}
                 </p>
             </div>
         </div>
@@ -22,7 +22,7 @@
 <script>
 import axios from 'axios'
 const api = 'http://104.248.120.4/api/books'
-const apiHolder = 'https://jsonplaceholder.typicode.com/todos'
+const apiHolder = 'https://jsonplaceholder.typicode.com/posts'
 export default {
     data(){
         return {
@@ -36,7 +36,7 @@ export default {
         fetchData(){
             axios.get(apiHolder)
                 .then(res => {
-                    this.books = res.data.data
+                    this.books = res.data.slice(0, 10)
                 })
                 .catch(error => {
                     console.log(error)

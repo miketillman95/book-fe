@@ -9,8 +9,9 @@
 
   .about {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
+    border: 2px solid black;
+			padding: 10px;
+      
   }
 }
 </style>
