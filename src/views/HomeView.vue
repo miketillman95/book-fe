@@ -3,12 +3,11 @@
         <div className="intro">
             <h1 >Welcome to my collection of books!</h1>
         </div>
-        <b-button>See the books</b-button>
     </div>
 </template>
 
 <style>
-@media (min-width: 1024px) {
+
 
 
     .intro {
@@ -30,5 +29,13 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+@media screen and (max-width: 600px) {
+    .intro {
+   background-color: none;
+   border: none;
+
 }
+}
+
 </style>

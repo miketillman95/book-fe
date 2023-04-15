@@ -7,8 +7,8 @@ import { RouterLink, RouterView } from 'vue-router'
 
     <div class="wrapper">
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/books">Books</RouterLink>
+        <h3><RouterLink to="/" :style="{textDecoration: 'none', color: 'black'}">Home</RouterLink></h3>
+        <h3><RouterLink to="/books" :style="{textDecoration: 'none', color: 'black'}">Books </RouterLink></h3>
       </nav>
     </div>
   </header>
@@ -17,41 +17,30 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
 
 
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
+nav h3 {
   display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
 }
 
-nav a:first-of-type {
-  border: 0;
+nav h3:hover{
+  text-decoration: underline;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+.wrapper {
+  background-color: grey;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper{
+    width:auto;
+    background-color: grey;
+
   }
 
   .logo {

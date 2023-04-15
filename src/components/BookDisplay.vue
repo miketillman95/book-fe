@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <h1>Welcome to the Book collection</h1>
+    <h1>Current collection of books </h1>
     <div class="card-container">
         <div class="card text-dark bg-light mb-3"  v-for="book in books" :key="'book.id'" style="max-width: 18rem;">
             <div class="card-header">Author of the Book:<br/>{{ book.title }}</div>
@@ -51,5 +51,9 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+h1 {
+    margin-bottom: 20px;
 }
 </style>
